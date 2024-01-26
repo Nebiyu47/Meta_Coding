@@ -7,10 +7,12 @@ public class FindCorrespodingNode {
         if (original == null) {
             return null;
         }
+
         TreeNode leftResult = getTargetCopy(original.left, cloned.left, target);
         if (leftResult != null) {
             return leftResult;
         }
+
         TreeNode rightResult = getTargetCopy(original.right, cloned.right, target);
         if (rightResult != null) {
 
